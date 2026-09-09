@@ -1,2 +1,26 @@
-# adaptive-web-skill
-Adaptive UI skill for HTML, CSS, and JavaScript coding agents.
+# Adaptive Web Skill
+
+HTML/CSS/JavaScript製のWeb UIを、画面サイズと入力方法に適応させるためのAIコーディングエージェント向け手順書です。UIライブラリや実行可能なWebアプリではありません。
+
+## 内容
+
+- `SKILL.md`: エージェントが実行する作業手順と検証基準。
+- ナビゲーション、複数ペイン、可変列数、入力方法、アクセシビリティ、スクロール時の表示制御を扱います。
+- 既存の技術構成を維持し、フレームワークの導入を前提にしません。
+
+## 使い方
+
+対象プロジェクトを開いたコーディングエージェントに、`SKILL.md` を参照するよう指示してください。
+
+```text
+このSKILL.mdに従って、既存のWeb UIを画面幅と入力方法に適応させてください。
+既存のデザインと技術構成を維持し、必要な変更だけを行ってください。
+```
+
+Skillとしての自動検出や配置先はエージェントごとに異なります。利用するツールの仕様に合わせて配置してください。
+
+## 出典と位置づけ
+
+[android/skills の adaptive](https://github.com/android/skills/tree/main/jetpack-compose/adaptive) の作業構成を参考に、Web向けの手順を独自に記述したものです。Google公式のWeb版ではなく、元のCompose用コードやAPIは含みません。
+
+このリポジトリは手順書のみを含みます。実装先のWebアプリに対するテストは、そのプロジェクトで実行してください。
